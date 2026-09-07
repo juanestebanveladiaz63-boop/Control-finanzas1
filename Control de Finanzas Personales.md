@@ -1,0 +1,15 @@
+Control de Finanzas Personales
+Idea del proyecto
+
+Aplicacion para controlar finanzas personales: registrar ingresos y gastos, verlos por categoria, consultar historial y ver el balance actual.
+
+Almacenar informacion en archivos
+
+Cada transaccion se guarda como un diccionario con tipo, categoria, monto y descripcion, en un archivo transacciones.json. Ese archivo se crea solo en la misma carpeta al agregar la primera transaccion, y se actualiza cada vez que se agrega o elimina algo. Al volver a abrir el programa, se lee ese archivo para recuperar todo lo guardado.
+
+
+Avance en codigo
+
+control_finanzas.py contiene la clase GestorFinanzas (maneja las transacciones y el archivo) y un menu por consola con las opciones de agregar, eliminar, ver historial, ver balance y salir.
+
+Para ejecutarlo: python control_finanzas.py
